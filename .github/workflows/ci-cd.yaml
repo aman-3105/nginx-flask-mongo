@@ -24,5 +24,9 @@ jobs:
 
         -   name: Execute on kind cluster
             run: kubectl apply -f mongo-depl.yaml -f mongo-svc.yaml -f flask-depl.yaml -f flask-svc.yaml -f nginx-depl.yaml
-        -   name: kubectl rollout
+
+        -   name: rollout
             run: kubectl rollout restart deploy flask-depl mongo-depl nginx-depl
+
+        -   name: rollout status
+            run: kubectl rollout status deploy flask-depl mongo-depl nginx-depl
