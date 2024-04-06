@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-import osho
+import os
 
 from flask import Flask
 from pymongo import MongoClient
