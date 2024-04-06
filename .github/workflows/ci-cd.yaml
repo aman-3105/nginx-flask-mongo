@@ -26,4 +26,4 @@ jobs:
         #         tags: aman3105/flask-nfm
 
         -   name: Execute on kind cluster
-            run: kubectl apply -f mongo-depl.yaml mongo-svc.yaml flask-depl.yaml flask-svc.yaml nginx-depl.yaml
+            run: kubectl apply -f mongo-depl.yaml -f mongo-svc.yaml -f flask-depl.yaml -f flask-svc.yaml -f nginx-depl.yaml
