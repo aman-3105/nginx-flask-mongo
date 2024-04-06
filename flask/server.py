@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 client = MongoClient("mongo:27017")
 
-@app.route('/')
+@app.route('/test')
 def todo():
     try:
         client.admin.command('ismaster')
