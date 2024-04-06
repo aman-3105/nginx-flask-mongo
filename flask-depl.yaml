@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: flask
-        image: traefik/whoami
+        image: aman3105/flask-nfm
         env:
-        - name: WHOAMI_PORT_NUMBER
+        - name: FLASK_SERVER_PORT
           value: "9091"
